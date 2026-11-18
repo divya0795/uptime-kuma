@@ -16,7 +16,7 @@ class Telegram extends NotificationProvider {
 
         // Characters that need to be escaped in MarkdownV2
         // https://core.telegram.org/bots/api#markdownv2-style
-        return String(text).replace(/[_*[\]()~>#+\-=|{}.!\\]/g, "\\$&");
+        return String(text).replace(/[_*[\]()~`>#+\-=|{}.!\\]/g, "\\$&");
     }
 
     /**
